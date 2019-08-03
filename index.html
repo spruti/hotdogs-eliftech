@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hotdog</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<link rel="stylesheet" href="css/normalize.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+		<div class="app">
+			<div class="app__container"><span class="app__word">create</span><span class="app__word">your own</span>
+				<div class="app__image"><img src="img/hotdog.png"/></div><span class="app__word">hot dog</span><a class="app__button">start</a>
+			</div>
+		</div>
+		<div class="modal">
+			<div class="modal__window">
+				<form class="modal__ingridients"> <span>Ingridients</span>
+					<select name="rool" id="rool" required="required">
+						<option value="" hidden="hidden" disabled="disabled" selected="selected">a rool v</option>
+						<option>french</option>
+						<option>american</option>
+					</select>
+					<select name="sausage" id="sausage" required="required">
+						<option value="" hidden="hidden" disabled="disabled" selected="selected">a sausage v</option>
+						<option>grill</option>
+						<option>simple</option>
+						<option>queen</option>
+					</select>
+					<select class="ingridients" name="ingridients" id="ingridients" required="required">
+						<option value="" hidden="hidden" disabled="disabled" selected="selected">other v</option>
+						<option>onion</option>
+						<option>tomato</option>
+						<option>potato</option>
+						<option>cheese</option>
+					</select>
+					<button class="modal__button hidden" id="editBtn" type="button">Edit</button>
+					<button class="modal__button" id="createBtn" type="submit">create!</button>
+				</form>
+				<div class="modal__tableHD"><span>my hot dog<sup>s</sup></span>
+					<ul class="modal__table"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/main.js"></script>
+</html>
